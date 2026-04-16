@@ -1,17 +1,17 @@
 {
   "server_version": "20.14.1",
   "openvr_config": {
-    "eye_resolution_width": 2144,
-    "eye_resolution_height": 2240,
-    "target_eye_resolution_width": 2144,
-    "target_eye_resolution_height": 2240,
+    "eye_resolution_width": 2592,
+    "eye_resolution_height": 2688,
+    "target_eye_resolution_width": 2592,
+    "target_eye_resolution_height": 2688,
     "tracking_ref_only": false,
     "enable_vive_tracker_proxy": false,
     "minimum_idr_interval_ms": 100,
     "adapter_index": 0,
     "codec": 0,
     "h264_profile": 0,
-    "refresh_rate": 72,
+    "refresh_rate": 90,
     "use_10bit_encoder": false,
     "use_full_range_encoding": true,
     "encoding_gamma": 1.0,
@@ -69,8 +69,8 @@
     "nvenc_enable_weighted_prediction": false,
     "capture_frame_dir": "/tmp",
     "amd_bitrate_corruption_fix": false,
-    "use_separate_hand_trackers": true,
-    "_controller_profile": 1,
+    "use_separate_hand_trackers": false,
+    "_controller_profile": 2,
     "_server_impl_debug": false,
     "_client_impl_debug": false,
     "_server_core_debug": false,
@@ -83,11 +83,11 @@
     "_decoder_debug": false
   },
   "client_connections": {
-    "client.wired": {
-      "display_name": "Quest 3",
+    "6529.client": {
+      "display_name": "Unknown",
       "current_ip": null,
       "manual_ips": [],
-      "trusted": true,
+      "trusted": false,
       "connection_state": "Disconnected"
     }
   },
@@ -127,7 +127,7 @@
       "bitrate": {
         "gui_collapsed": false,
         "mode": {
-          "ConstantMbps": 30,
+          "ConstantMbps": 300,
           "Adaptive": {
             "gui_collapsed": true,
             "saturation_multiplier": 0.95,
@@ -176,7 +176,7 @@
       "foveated_encoding": {
         "enabled": true,
         "content": {
-          "gui_collapsed": true,
+          "gui_collapsed": false,
           "force_enable": false,
           "center_size_x": 0.45,
           "center_size_y": 0.4,
@@ -397,7 +397,7 @@
         }
       },
       "microphone": {
-        "enabled": false,
+        "enabled": true,
         "content": {
           "gui_collapsed": true,
           "devices": {
@@ -439,7 +439,7 @@
           "gui_collapsed": false,
           "tracked": true,
           "hand_skeleton": {
-            "enabled": true,
+            "enabled": false,
             "content": {
               "steamvr_input_2_0": true,
               "predict": false
@@ -463,7 +463,7 @@
               "repeat_delay": 100
             }
           },
-          "steamvr_pipeline_frames": 2.1,
+          "steamvr_pipeline_frames": 2.3,
           "haptics": {
             "enabled": true,
             "content": {
@@ -482,7 +482,7 @@
                 "content": []
               }
             },
-            "variant": "Quest2Touch"
+            "variant": "Quest3Plus"
           },
           "extra_openvr_props": {
             "gui_collapsed": true,
@@ -671,9 +671,9 @@
         "Custom": "alvr.client",
         "variant": "Store"
       },
-      "wired_client_autolaunch": true,
-      "enable_on_connect_script": false,
-      "enable_on_disconnect_script": false,
+      "wired_client_autolaunch": false,
+      "enable_on_connect_script": true,
+      "enable_on_disconnect_script": true,
       "allow_untrusted_http": false,
       "avoid_video_glitching": false,
       "packet_size": 1400,
