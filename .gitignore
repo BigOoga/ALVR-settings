@@ -1,0 +1,11 @@
+.vscode/settings.json
+
+/bin
+/licenses
+/platform-tools
+/ALVR Dashboard.exe
+/crash_log.txt
+/devices.txt
+/driver.vrdrivermanifest
+/SoundVolumeView.exe
+/SoundVolumeView.cfg
